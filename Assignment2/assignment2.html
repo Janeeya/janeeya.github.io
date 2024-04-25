@@ -6,6 +6,9 @@
 </head>
 <body>
     <nav>
+        <div class="logo">
+            <img src="enjoying_asian_cafe_Logo.png" width="150" height="130">
+        </div>
         <ul>
             <li><a href="">Menus</a></li>
             <li><a href="">Specials</a></li> 
@@ -55,7 +58,15 @@
             margin: 0;
             padding: 0;
         }
-
+        .logo {
+            margin-right: auto;
+            display: absolute;
+            border-radius: 70px;
+            overflow: hidden;
+            margin-top: 2.3rem;
+            margin-left: -4rem;
+            border: 2px solid #000000;
+        }
         header h1 {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center; 
@@ -67,11 +78,12 @@
             border: 2px solid rgb(240, 159, 19);
             box-shadow: 0 0 5px 0 rgb(245, 213, 3);
             background: #ffffff;
-            padding: 10px;
-            margin: 0.5rem;
+            padding: 15px;
+            margin-left: 3rem;
+            margin-right: 0.5rem;
+            margin-top: 1.5rem;
             height: 50px;
         }
-
         nav ul {
             display: flex;
             list-style: none;
@@ -79,7 +91,6 @@
             padding: 0;
             white-space: nowrap;
         }
-
         nav ul li {
             font-size: 20px;
             list-style: none;
@@ -107,21 +118,18 @@
             justify-content: flex-end;
             margin-top: 2px; 
         }
-
         .social-icons a {
             display: inline-block;
             width: 40px;
             height: 40px;
             margin: 0 10px; 
         }
-
         .social-icons a img {
             width: 100%;
             height: 100%;
             border-radius: 50%; 
             transition: transform 0.3s ease;
         }
-
         .social-icons a img:hover {
             transform: scale(1.1);
         }
