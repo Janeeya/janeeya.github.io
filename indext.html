@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSC 193A</title>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="indext.html">Home</a></li>
+            <li><a href="https://github.com/Janeeya/janeeya.github.io">GitHub</a></li>
+            <li><a href="#">About CSC 193A</a></li>
+        </ul>
+    </nav>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+
+        <div class="box">
+            <div class="className">
+                <h1>CSC 193A-01</h1>
+            </div>
+
+            <div class="assignments">
+                <ul>
+                    <li><a href="Assignment2/assignment2.html">Assignmetn 2</a></li>
+                    <li><a href="Assignment5/fancifymytext.html">Assignmetn 5</a></li> 
+                    <li><a href="">Assignmetn 6</a></li>
+                </ul>
+            </div>
+        </div><br>
+
+<style>
+    * {
+        list-style: none;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(201, 243, 248);
+        margin: 0;
+        padding: 0;
+    }
+    .menu-toggle {
+        position: fixed;
+        top: 8rem;
+        left: 16rem;
+        z-index: 1000;
+        cursor: pointer;
+        color: #333; 
+        font-size: 36px;
+        max-width: 80%; 
+    }
+    .menu {
+        position: absolute;
+        top: 11rem;
+        left: 14rem;
+        border-radius: 5px;
+        padding: 12px;
+        background-color: #000000;
+        box-shadow: 4px 4px 5px rgba(60, 60, 60, 0.2);
+        z-index: 999;
+        display: none;
+    }
+    .menu ul {
+        width: 100%;
+        padding: 0;
+    }
+    .menu ul li {
+        margin-top: 0.5rem;
+    }
+    .menu ul li a:hover {
+        background-color: #007bff;
+    }
+    .menu li a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .menu.active {
+        display: block;
+    }
+
+    .box {
+        border: 2px solid rgb(0, 0, 0);
+        width: 50%;
+        max-width: 80%; 
+        border-radius: 20px;
+        margin: 12rem auto; 
+        background-color: rgb(26, 144, 253);
+        color: aliceblue;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 6px 6px 4px rgb(0, 0, 0);
+    }
+    .className h1 {
+        font-size: 36px;
+        text-shadow: 2px 4px 2px rgb(0, 45, 169);
+    }
+
+    .assignments ul {
+        text-align: center;
+        padding: 0;
+    }
+    .assignments ul li {
+        background-color: aquamarine;
+        border: 2px solid rgb(0, 0, 0);
+        box-shadow: 2px 4px 4px rgb(0, 0, 0);
+        border-radius: 20px;
+        font-size: 20px;
+        width: 80%;
+        max-width: 400px; 
+        margin: 1rem auto; 
+        padding: 10px;
+        font-weight: 600;
+    }
+    .assignments ul li a {
+        text-decoration: none;
+    }
+
+    .assignments ul li:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* Media Query for Responsive Layout */
+    @media (max-width: 768px) {
+        .box {
+            width: 80%;
+        }
+        
+        .assignments ul li {
+            width: 90%;
+            font-size: 18px;
+        }
+    }
+
+
+</style>
+</body>
