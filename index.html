@@ -9,12 +9,11 @@
     <div class="menu-toggle" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
     </div>
-    
+
     <nav class="menu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://github.com/Janeeya/janeeya.github.io">GitHub</a></li>
-            <li><a href="#">About CSC 193A</a></li>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="https://github.com/Janeeya/janeeya.github.io"><i class="fab fa-github"></i> GitHub</a></li>
         </ul>
     </nav>
     
@@ -35,7 +34,7 @@
                 <ul>
                     <li><a href="Assignment2/assignment2.html">Assignmetn 2</a></li>
                     <li><a href="Assignment5/fancifymytext.html">Assignmetn 5</a></li> 
-                    <li><a href="">Assignmetn 6</a></li>
+                    <li><a href="Assignment6/encrypt-it.html">Assignmetn 6</a></li>
                 </ul>
             </div>
         </div><br>
@@ -64,6 +63,7 @@
         position: absolute;
         top: 11rem;
         left: 14rem;
+        width: 100px;
         border-radius: 5px;
         padding: 12px;
         background-color: #000000;
@@ -80,11 +80,13 @@
     }
     .menu ul li a:hover {
         background-color: #007bff;
+        border-radius: 8px;
     }
     .menu li a {
         color: #fff;
         font-size: 16px;
         font-weight: 500;
+        padding: 2px 12px 2px 12px;
     }
     .menu.active {
         display: block;

@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt-It!</title>
+    <script src="encrypt-it.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  </head>
+
+  <body>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+  </div>
+  
+  <nav class="menu">
+      <ul>
+          <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="https://github.com/Janeeya/janeeya.github.io"><i class="fab fa-github"></i> GitHub</a></li>
+      </ul>
+  </nav>
+  <script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+  </script>
+  
+    <header>
+      <h1>Encrypt-It!</h1>
+      <h2>Translate any text message into a super-secret cipher!</h2>
+    </header>
+    <main>
+      <fieldset>
+        <legend>Text to Encrypt</legend>
+        <textarea id="inputText" rows="10" cols="60" placeholder="Enter your message to be encrypted here"></textarea>
+        </textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Encrypt Options</legend>
+
+        <p>
+          <strong>Cipher Type: </strong>
+          <select id="cipher-type">
+            <option value="shift">Shift Cipher</option>
+          </select>
+        </p>
+
+        <button id="encryptButton">Encrypt It!</button>
+        <button id="resetButton">Reset</button>
+      </fieldset>
+
+      <div id="result-area">
+        <h2>Result:</h2>
+        <p id="result"></p>
+      </div>
+    </main>
+  </body>
+</html>
